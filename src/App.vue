@@ -1,26 +1,54 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-app>
+    <v-main>
+    <TheHeaders/>
+    <!-- <ThemeChange/> -->
+    <RouterView></RouterView>
+    <!-- <MainPage/> -->
+    <MyFirstPage />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MyFirstPage from './components/MyFirstPage.vue'
+import TheHeaders from './components/TheHeader.vue'
+// import ThemeChange from './components/ThemeChange.vue'
+// import MainPage from './components/MainPage.vue'
 export default {
   name: 'App',
+  // data: () => ({
+  //   questions: [
+  //       {id:1, title: 'Вы высыпаетесь?', completed:false},
+  //       {id:2, title: 'Сколько часов вы спите', completed:false},
+  //       {id:3, title: 'Как вы спите', completed:false},
+  //     ]
+  // }),
+  data(){
+    return{
+      questions: [
+        {id:1, title: 'Вы высыпаетесь?', completed:false},
+        {id:2, title: 'Сколько часов вы спите', completed:false},
+        {id:3, title: 'Как вы спите', completed:false},
+      ]
+    }
+  },
   components: {
-    HelloWorld
-  }
+    MyFirstPage,
+    TheHeaders,
+    // ThemeChange,
+},
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #000000;
 }
 </style>
+
+
