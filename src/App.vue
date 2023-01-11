@@ -1,10 +1,12 @@
 <template>
   <v-app>
     <v-main>
-    <TheHeaders/>
+    <TheHeaders  />
     <!-- <ThemeChange/> -->
     <RouterView></RouterView>
+    
     <!-- <MainPage/> -->
+    <FooterBar />
     <MyFirstPage />
     </v-main>
   </v-app>
@@ -13,6 +15,8 @@
 <script>
 import MyFirstPage from './components/MyFirstPage.vue'
 import TheHeaders from './components/TheHeader.vue'
+import FooterBar from './components/FooterBar.vue'
+
 // import ThemeChange from './components/ThemeChange.vue'
 // import MainPage from './components/MainPage.vue'
 export default {
@@ -33,9 +37,12 @@ export default {
       ]
     }
   },
+  
   components: {
     MyFirstPage,
     TheHeaders,
+    FooterBar,
+    
     // ThemeChange,
 },
 }

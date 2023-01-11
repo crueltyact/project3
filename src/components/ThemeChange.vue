@@ -30,8 +30,5 @@ theme.value = theme.value === 'light' ? 'dark' : 'light'
 </script> -->
 
 <style scoped>
-    li{
-        
-        
-    }
+    
 </style>

@@ -1,11 +1,12 @@
 <template>   
     <header class="clr">
     <nav class="navig">
-        <a href="/" class="nav-logo"><v-img lazy-src="../assets/anketa.png" min-height="60" min-width="70" src="../assets/anketa.png"></v-img>PEN_SURVEY</a>
+        <a href="/" class="nav-logo"><v-img lazy-src="../assets/anketa.png" min-height="60" min-width="60" src="../assets/anketa.png"></v-img>PEN_SURVEY</a>
         
         <ul>
-            <li class="nav-item"><a href="/#/surveys" class="nav-link">Survey's</a></li>
-            <li class="nav-item" ><a href="#" class="nav-link">Log-in</a></li>
+            <li class="nav-item"><a href="/#/surveys" class="nav-link">SURVEYS</a></li>
+            <li class="nav-item" ><a href="#" class="nav-link">ABOUT</a></li>
+            <li class="nav-item" ><a href="#" class="nav-link">LOGIN</a></li>
         </ul>
     </nav>
     </header>
@@ -24,14 +25,14 @@
     }
 
     .nav-item{
-        margin-top: 12px;   
-        margin-right: 10px;
+        margin-top: 8px;   
+        
     }
 
     .nav-link{
         text-decoration: none;
         font-size: 25px;
-        color: black;
+        color: rgb(255, 255, 255);
     }
 
     .clr{
@@ -47,7 +48,7 @@
         align-items: center;
         text-decoration: none;
         font-size: 25px;
-        color: black;
+        color: rgb(255, 255, 255);
     }
     .navig{
         display: flex;
